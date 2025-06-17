@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BTech XML Generator</title>
+</head>
+<body>
+  <h1>BTech XML Config Generator</h1>
+
+  <label>
+    Excel Source File:
+    <input type="text" id="inputFile" readonly>
+    <button id="browseFile">Browse</button>
+  </label>
+  <br><br>
+
+  <label>
+    Output Directory:
+    <input type="text" id="outputDir" value="btechxml" readonly>
+    <button id="browseDir">Browse</button>
+  </label>
+  <br><br>
+
+  <label>
+    Probe:
+    <select id="probeSelect">
+      <option value="all">All</option>
+    </select>
+  </label>
+
+  <label>
+    Sheet:
+    <select id="sheetSelect">
+      <option value="all">All</option>
+    </select>
+  </label>
+  <br><br>
+
+  <button id="generateBtn">Generate</button>
+  <button id="pushBtn" disabled>Push</button>
+
+  <pre id="logOutput" style="white-space: pre-wrap; background: #eee; padding: 1em;"></pre>
+
+  <script src="index.js"></script>
+</body>
+</html>
